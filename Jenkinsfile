@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Building the application...'
                 // Example build command
-                sh 'docket build -t jenkinsimage .'
+                sh 'docker build -t jenkinsimage .'
             }
         }
         stage('Test') {
